@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --nav-text-color: #C4C4CC;
+    --content-text-color: #E1E1E6;
+    --btn-hover-text-color: #02799D;
+}
+
+html, 
+body {
+    font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    min-height: 100vh;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3.2rem;
+
+    margin: 4rem 0 0 7.2rem;
+}
+
+nav a {
+    color: var(--nav-text-color);
+    text-decoration: none;
+
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+}
+
+nav a:hover {
+    color: #FFF;
+    font-size: 900;    
+}
+
+nav a img:hover {
+    animation: rotateAndShrink 2s infinite linear;
+}
+
+#app main h1 {
+    color: var(--content-text-color);
+    font-size: 4.8rem;
+}
+
+/* HOME PAGE */
+
+#home {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    width: 100%;
+}
+
+.button-wrapper button {
+    background-color: transparent;
+    border: 2px solid #FFF;
+    border-radius: .5rem;
+
+    color: #FFF;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 2.4rem;
+
+    padding: 1.2rem 3.2rem;
+    margin-top: 2.4rem;
+}
+
+.button-wrapper button:hover {
+    background-color: #FFF;
+
+    color: var(--btn-hover-text-color);
+}
+
+/* EXPLORE + UNIVERSE PAGES */
+
+#explore,
+#universe,
+#error {
+    margin: 6.3rem 0 0 10rem;
+}
+
+#explore p,
+#universe p {
+    color: var(--content-text-color);
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+
+    width: 64.8rem;
+
+    margin-top: 1.6rem;
+}
+
+/* ERROR PAGE */
+
+#error h2 {
+    font-size: 3.4rem;
+    color: rgb(208, 49, 49);
+}
+
+/* ANIMATIONS */
+
+@keyframes rotateAndShrink {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        transform: rotate(180deg) scale(0.5);
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 574px) {
+    nav {
+       display: flex;
+       flex-wrap: wrap;
+
+       text-align: center;
+
+        
+    
+        margin: 2.2rem auto;
+    }
+
+    nav a {    
+        flex-basis: calc(100% / 2.3);
+        font-size: 1.8rem;
+    }
+
+
+    #app main h1 {
+        color: var(--content-text-color);
+        font-size: 3rem;
+    }
+
+    .button-wrapper button {
+        font-size: 1rem;
+    }
+
+    #explore,
+    #universe,
+    #error {
+        margin: 6.3rem 5rem 0 5rem;
+    }
+
+    #explore p,
+    #universe p {
+        font-size: 1.2rem;
+        line-height: 2rem;
+        
+        width: 260px;
+
+       
+
+
+    }
+}
