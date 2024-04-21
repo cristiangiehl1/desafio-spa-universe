@@ -5,7 +5,7 @@ E aí, curtiu aprender todos esses novos conceitos de JavaScript?<br>
 <br>
 Bora praticar e rever tudo o que foi ensinado na aula? 💜<br>
 <br>
-A ideia agora é criar o SPA Universe! 🚀
+A ideia agora é criar o SPA Universe! 🚀 <br>
 <br>
 Aqui está o <a href="https://www.figma.com/file/QfBlOdICFoEegSnszTvoVi/Desafios-Explorer-SPA-Universe-Copy?fuid=1283792090047540509">LINK</a> com o layout da aplicação.
 <p align="center">
@@ -29,15 +29,14 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 🔖 Abordagem
 
-<p> Funcionalidades esperadas dos botões:</p>
+<p>O que será abordado nesse desafio:</p>
 <ul>
-  <li>Play: aciona o timer;</li>
-  <li>Stop: para o timer;</li>
-  <li>Set: pode definir o timer;</li>
-  <li>+: aumenta em mais 5 minutos o tempo do timer</li>
-  <li>-: diminui em 5 minutos o tempo do timer. </li>  
+  <li>Conceitos de SPA;</li>
+  <li>Mapeamento de rotas;</li>
+  <li>Assíncrono e promises;</li>
+  <li>Orientação a objetos;</li>
+  <li>Classes e muito mais.</li>  
 </ul>
-
 
 Feito com ♥ by Rocketseat :wave: [Participe da nossa comunidade!](https://discord.gg/rocketseat)
 
